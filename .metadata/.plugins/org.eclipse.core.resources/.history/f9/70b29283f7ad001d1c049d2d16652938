@@ -1,0 +1,20 @@
+
+public class Cat extends Pet{
+	
+	String hair;
+	String claws;
+	String foodtype;
+
+	
+	public Cat() {
+		
+	}
+	
+	public Cat(String hair, String claws, String foodtype){
+		this.hair = hair;
+		this.claws = claws;
+		this.foodtype = foodtype;
+	}
+	
+	
+}

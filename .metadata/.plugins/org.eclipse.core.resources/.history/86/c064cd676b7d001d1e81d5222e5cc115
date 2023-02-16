@@ -1,0 +1,51 @@
+import java.util.Scanner;
+public class arraysBasic {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		double grades[] = {96.5,98.7,99.3,88.4,88.6,90.1};
+		int numbers[] = new int[10];//declare array
+		int i;
+		
+		
+		//store numbers plus 10
+		for (i = 0; i<=9; i++) {
+			numbers[i] = i + 10;
+		}
+		
+		for (i = 0; i <= 9 ; i++) {
+			System.out.println(numbers[i]);
+		}
+		
+		
+		for(i = 0; i <= 5; i++)
+		{
+		System.out.println("Grade number " + i + " is " + grades[i]);
+		}
+	}
+}
+
+//		int age[] = {0,1,2};
+//		double height[] = {4.7, 2.7, 6.7};
+//		
+////		height[0] = 4.7;
+////		height[1] = 2.7;
+////		height[3] = 6.7;
+//		
+//		System.out.println("The first height is: "+height[0]);
+//		System.out.println("The first height is: "+height[1]);
+//		System.out.println("The first height is: "+height[2]);
+//		
+//		
+//		
+////		age[0] = 0;
+////		age[1] = 1;
+////		age[2] = 2;
+//		
+//		System.out.println(age[0]);
+//		System.out.println(age[1]);
+//		System.out.println(age[2]);
+//
+//	
+//	
+//	

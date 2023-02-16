@@ -1,0 +1,47 @@
+
+public class basketballMotivation {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+//		int posArr[] = {1, -4, 7, 12};
+//		
+//		for (int i = 0; i < posArr.length; i++) {
+//			return
+//		}
+		
+		
+		
+	}
+
+}
+
+
+class Positive{
+
+	  public static int sum(int[] arr){
+		  
+	    
+	    int posArr[] = {1, -4, 7, 12};
+	    int positive = posArr[0];
+	    int negative = posArr[0];
+	    
+	    
+//	    int negative = posArr[];
+	    
+	    for(int i = 0; i < arr.length; i++) {
+	    	if (i <= 0) {
+	    		posArr[i] += positive;
+	    	}
+	    	else if(i < 0) {
+	    		posArr[i] += negative;
+	    	}
+	    	
+	    }
+	       
+	    
+	    
+	    return 0;
+	  }
+
+	}

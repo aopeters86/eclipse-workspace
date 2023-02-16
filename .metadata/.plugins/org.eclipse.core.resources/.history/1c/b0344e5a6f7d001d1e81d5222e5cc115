@@ -1,0 +1,16 @@
+
+public class Exercise1Youtube {
+	
+	// loop thru 100 elements and store square of it, print out array 
+	
+	int squares[] = new int[100];
+	
+	int i;
+	
+	for(i= 0; i<99; i++) {
+		//for every value it's stored as its square
+		squares[i]= i*i;
+	}
+
+}
+}

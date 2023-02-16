@@ -1,0 +1,16 @@
+
+public class century {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+class Solution {
+	  public static int century(int number) {
+		return (number + 99 / 100);
+	    // your code goes here
+	  }
+	}

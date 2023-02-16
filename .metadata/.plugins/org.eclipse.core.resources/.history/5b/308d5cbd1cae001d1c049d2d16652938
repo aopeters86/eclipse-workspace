@@ -1,0 +1,85 @@
+//jeremy peters csc275 online
+public class Archer {
+	private Integer Health;
+	private Integer Intelligence; 
+	private Integer Dexterity;
+	private Integer Strength;
+	private Integer Stamina;
+	
+	public Archer() {
+	}
+	public Archer(Integer health, Integer intelligence, Integer dexterity, Integer strength, Integer stamina) {
+		if(health >= 0) {
+		Health = health;
+		}else Health = 0;
+		
+		if(intelligence >= 0) {
+		Intelligence = intelligence;
+		}else Intelligence = 0;
+		
+		if(dexterity >= 0) {
+		Dexterity = dexterity;
+		}else Dexterity = 0; 
+		
+		if(strength >= 0) {
+		Strength = strength;
+		}else Strength = 0;
+		
+		if(stamina >= 0) {
+		Stamina = stamina;
+		}else Stamina = 0; 
+	}
+	public Integer getHealth() {
+		return Health;
+	}
+	public void setHealth(Integer health) {
+			if(health >= 0) {
+			Health = health;
+			}else Health = 0;
+	}
+	public Integer getIntelligence() {
+		return Intelligence;
+	}
+	public void setIntelligence(Integer intelligence) {
+			if(intelligence >= 0) {
+			Intelligence = intelligence;
+			}else Intelligence = 0;
+	}
+	public Integer getDexterity() {
+		return this.Dexterity;
+	}
+	public void setDexterity(Integer dexterity) {
+			if(dexterity >= 0) {
+			Dexterity = dexterity;
+			}else Dexterity = 0; 
+	}
+	public Integer getStrength() {
+		return Strength;
+	}
+	public void setStrength(Integer strength) {
+			if(strength >= 0) {
+			Strength = strength;
+			}else Strength = 0;
+	}
+	public Integer getStamina() {
+		return Stamina;
+	}
+	public void setStamina(Integer stamina) {
+			if(stamina >= 0) {
+			Stamina = stamina;
+			}else Stamina = 0; 
+	}
+	public Double getDamagePerRangedAttack() {
+		Double rangedAttackDamage = (getDexterity() * 0.5 + getIntelligence() * 0.8);
+		return rangedAttackDamage;
+	}
+	public double getDamagePerMeleeAttack(){
+		Double meleeAttackDamage = (getDexterity() * 0.5 + getStrength() * 0.8);
+		return meleeAttackDamage;
+	}
+	@Override
+	public String toString() {
+		return "Archer [Health=" + Health + ", Intelligence=" + Intelligence + ", Dexterity=" + Dexterity
+				+ ", Strength=" + Strength + ", Stamina=" + Stamina + "]";
+	}	
+}

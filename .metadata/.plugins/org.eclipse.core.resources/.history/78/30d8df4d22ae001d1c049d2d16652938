@@ -1,0 +1,49 @@
+
+public class testplm1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		Dog mavis = new Dog();
+		mavis.setName("Mavis");
+		mavis.setAge(6);
+		mavis.setColor("black");
+		System.out.println(mavis.toString());
+		mavis.setBreed("Labrador mix");
+		mavis.setWeight(95.5);
+		mavis.printDog();
+		
+		
+		Cat fuckcats = new Cat();//how can this be identified in tostring?
+		System.out.println(fuckcats.setName("asshole"));
+		System.out.println(fuckcats.setAge(69));
+		System.out.println(fuckcats.setColor("shit"));
+		System.out.println(fuckcats.toString());
+		System.out.println(fuckcats.setFoodtype("soft"));
+		System.out.println(fuckcats.setClaws("claws"));
+		System.out.println(fuckcats.setHair("hairless"));
+		System.out.println(fuckcats.printCat());
+	
+		
+		Monkey newmonkey = new Monkey();
+		System.out.println(newmonkey.setName("slappy"));
+		System.out.println(newmonkey.setAge(22));
+		System.out.println(newmonkey.setColor("red"));
+		System.out.println(newmonkey.toString());
+		System.out.println(newmonkey.setType("Orangutan"));
+		System.out.println(newmonkey.setSize(65));
+		System.out.println(newmonkey.setThrowspoop("yes"));
+		System.out.println(newmonkey.monkeyPrint());
+		System.out.println();
+	
+	
+	
+	
+	
+	
+	
+	
+	}
+
+}

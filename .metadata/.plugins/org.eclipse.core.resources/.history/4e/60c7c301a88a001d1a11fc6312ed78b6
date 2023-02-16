@@ -1,0 +1,18 @@
+
+public class Banjo {
+	
+	  public static String areYouPlayingBanjo(String name) {
+	    // Program me!
+		  
+		  String playerName = name;
+		  
+		  if(playerName(charAt(0)) != "r") {
+			  return  1;
+			  
+		  }
+		  else {
+			  return 2;
+		  }
+		  
+	  }
+	}

@@ -1,0 +1,48 @@
+
+public class Monkey {
+	String type;
+	String size;
+	String throwspoop;
+	
+	public Monkey() {
+		
+	}
+	
+	public Monkey(String type, String size, String throwspoop) {
+		this.type = type;
+		this.size = size;
+		this.throwspoop = throwspoop;
+	}
+
+	public String getType() {
+		return type;
+	}
+
+	public Boolean setType(String type) {
+		this.type = type;
+		return true;
+	}
+
+	public String getSize() {
+		return size;
+	}
+
+	public Boolean setSize(String size) {
+		this.size = size;
+		return true;
+	}
+
+	public String getThrowspoop() {
+		return throwspoop;
+	}
+
+	public Boolean setThrowspoop(String throwspoop) {
+		this.throwspoop = throwspoop;
+		return true;
+	}
+	
+	public String monkeyPrint() {
+		return"";
+	}
+
+}

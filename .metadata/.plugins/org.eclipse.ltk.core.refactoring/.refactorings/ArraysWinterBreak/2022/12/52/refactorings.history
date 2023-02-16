@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;ArraysRecap&apos; to &apos;ArraysUserInAndSort&apos;&#x0D;&#x0A;- Original project: &apos;ArraysWinterBreak&apos;&#x0D;&#x0A;- Original element: &apos;ArraysRecap&apos;&#x0D;&#x0A;- Renamed element: &apos;ArraysUserInAndSort&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Rename similarly named elements&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;ArraysRecap&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;{ArraysRecap.java[ArraysRecap" matchStrategy="1" name="ArraysUserInAndSort" qualified="false" references="true" similarDeclarations="true" stamp="1671375750164" textual="false" version="1.0"/>
+</session>

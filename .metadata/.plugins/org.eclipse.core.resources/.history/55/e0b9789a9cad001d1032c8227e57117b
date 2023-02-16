@@ -1,0 +1,12 @@
+
+public class testplm1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		Dog mavlix = new Dog("Lab", 120.21);
+		System.out.println(mavlix.toString());
+	}
+
+}

@@ -1,0 +1,25 @@
+
+public class Exercise4_2d_YT {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		/*
+		 * Jan = 34
+		 * Feb = 44
+		 * Mar = 23
+		 * Apr = 76
+		 * May = 65
+		 * Jun = 98
+		 * Jul = 123
+		 * Aug = 102
+		 * Sep = 87
+		 * Oct = 43
+		 * Nov = 34
+		 * Dec = 12
+		 * 
+		 */
+
+	}
+
+}

@@ -1,0 +1,21 @@
+
+public class Banjo {
+	public static void main(String[] args) {
+		
+		String playBanjo = new String();
+		playBanjo = "ryan";
+
+
+	}
+	
+	  public static String areYouPlayingBanjo(String name) {
+	    // Program me!
+		  
+		  if ((name.charAt(0) == 'r') && name.charAt(0) == 'R') {
+		  return "player does play banjo";
+		  }
+		  else 
+		  return "player does not play banjo";
+	  }
+}
+

@@ -1,0 +1,15 @@
+
+public class testplm1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		Dog mavis = new Dog();
+		System.out.println(mavis.setName("Mavis"));
+		System.out.println(mavis.setAge(6));
+		System.out.println(mavis.setColor("black"));
+		System.out.println(mavis.toString());
+	}
+
+}

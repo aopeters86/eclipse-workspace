@@ -1,0 +1,82 @@
+//jeremy peters csc275 online
+public class Player {
+	private Integer Health;
+	private Integer Intelligence;
+	private Integer Dexterity;
+	private Integer Strength;
+	private Integer Stamina;
+	
+	public Player() {	
+	}
+	public Player(Integer health, Integer intelligence, Integer dexterity, Integer strength, Integer stamina) {
+		if(health >= 0) {
+		Health = health;
+		}else Health = 0;
+		
+		if(intelligence >= 0){
+		Intelligence = intelligence;
+		}else Intelligence = 0;
+		
+		if(dexterity >= 0) {
+		Dexterity = dexterity;
+		}else Dexterity = 0;
+		
+		if(strength >= 0) {
+		Strength = strength;
+		}else Strength = 0;
+		
+		if(stamina >= 0) {
+		Stamina = stamina;
+		}else Stamina = 0;
+	}
+	public Integer getHealth() {
+			return  Health;
+	}
+	public Boolean setHealth(Integer health) {
+		if(health >= 0) {
+		Health = health;
+		}else Health = 0;
+		return true;
+	}
+	public Integer getIntelligence() {
+		return Intelligence;	
+	}
+	public Boolean setIntelligence(Integer intelligence) {
+		if(intelligence >= 0) {
+		Intelligence = intelligence;
+		}else Intelligence = 0;
+		return true;
+	}
+	public Integer getDexterity() {
+		return Dexterity;
+	}
+	public Boolean setDexterity(Integer dexterity) {
+		if(dexterity >= 0) {
+		Dexterity = dexterity;
+		}else Dexterity = 0;
+		return true;
+		}
+	public Integer getStrength() {
+		return Strength;
+	}
+	public Boolean setStrength(Integer strength) {
+		if(strength >= 0) {
+		Strength = strength;
+		}else Strength = 0;
+		return true;
+	}
+	public Integer getStamina() {
+		return Stamina;
+	}
+	public Boolean setStamina(Integer stamina) {
+		if(stamina >= 0) {
+		Stamina = stamina;
+		}else Stamina = 0;
+		return true;
+	}
+	@Override
+	public String toString() {
+		return "Player [Health=" + Health + ", Intelligence=" + Intelligence + ", Dexterity=" + Dexterity
+				+ ", Strength=" + Strength + ", Stamina=" + Stamina + "]";
+	}
+}
