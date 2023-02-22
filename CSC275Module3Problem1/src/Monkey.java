@@ -2,13 +2,16 @@
 public class Monkey extends Pet{
 	String type;
 	Integer size;
-	String throwspoop;
+	Boolean throwspoop;
 	
 	public Monkey() {
 		
 	}
 	
-	public Monkey(String type, Integer size, String throwspoop) {
+	public Monkey(String name, Integer age, String color, String type, Integer size, Boolean throwspoop) {
+		super.setName(name);
+		super.setAge(age);
+		super.setColor(color);		
 		this.type = type;
 		this.size = size;
 		this.throwspoop = throwspoop;
@@ -32,17 +35,25 @@ public class Monkey extends Pet{
 		return true;
 	}
 
-	public String getThrowspoop() {
+	public Boolean getThrowspoop() {
 		return throwspoop;
 	}
 
-	public Boolean setThrowspoop(String throwspoop) {
+	public Boolean setThrowspoop(Boolean throwspoop) {
 		this.throwspoop = throwspoop;
 		return true;
 	}
-	
-	public String monkeyPrint() {
-		return "Type of monkey? " +type+ "\nSize of Monkey(in inches)" +size+ "\nThrows Poo? " +throwspoop;
+
+	@Override
+	public String toString() {
+		return "Monkey [getName()=" + getName() + ", getAge()=" + getAge() + ", getColor()=" + getColor() + ", type="
+				+ type + ", size=" + size + ", throwspoop=" + throwspoop + "]";
 	}
+
+	
+	
+//	public String monkeyPrint() {
+//		return "Type of monkey? " +type+ "\nSize of Monkey(in inches)" +size+ "\nThrows Poo? " +throwspoop;
+//	}
 
 }

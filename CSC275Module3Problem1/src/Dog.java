@@ -6,14 +6,18 @@ public class Dog extends Pet{
 //String color;
 String breed;
 Double weight;
+Boolean barks;
 
 public Dog() {
 }
 
-public Dog(String name, String breed, Double weight) {
+public Dog(String name, Integer age, String color, String breed, Double weight, Boolean barks ) {
 	super.setName(name);
+	super.setAge(age);
+	super.setColor(color);
 	this.breed = breed;
 	this.weight = weight;
+	this.barks = barks;
 }
 
 public String getBreed() {
@@ -34,9 +38,41 @@ public Boolean setWeight(Double weight) {
 	return true;
 }
 
-public String printDog() {
-	return "Dog Breed: " + breed + "\nWeight: " + weight;
+public Boolean getBarks() {
+return barks;
 }
+
+public Boolean setBarks(Boolean barks) {
+	this.barks = barks;
+	return true;
+}
+
+@Override
+public String toString() {
+	return "Dog [getName()=" + getName() + ", getAge()=" + getAge() + ", getColor()=" + getColor() + ", breed=" + breed
+			+ ", weight=" + weight + ", barks=" + getBarks() + "]";
+}
+
+
+
+
+//@Override
+//public String toString() {
+//	return "Dog [getName()=" + getName() + ", getAge()=" + getAge() + ", getColor()=" + getColor() + ", breed=" + breed
+//			+ ", weight=" + weight + "]";
+//}
+
+
+
+//@Override
+//public String toString() {
+//	return "Dog [breed=" + breed + ", weight=" + weight + "]";
+//}
+
+//public String printDog() {
+//	return "Dog Breed: " + breed + "\nWeight: " + weight;
+//}
+
 
 
 }

@@ -1,8 +1,9 @@
 
 public class Cat extends Pet{
 	
+	
 	String hair;
-	String claws;
+	Boolean claws;
 	String foodtype;
 
 	
@@ -10,7 +11,11 @@ public class Cat extends Pet{
 		
 	}
 	
-	public Cat(String hair, String claws, String foodtype){
+	public Cat(String name, Integer age, String color, String hair, Boolean claws, String foodtype){
+		
+		super.setName(name);
+		super.setAge(age);
+		super.setColor(color);
 		this.hair = hair;
 		this.claws = claws;
 		this.foodtype = foodtype;
@@ -29,13 +34,14 @@ public class Cat extends Pet{
 		return false;
 	}
 
-	public String getClaws() {
+	public Boolean getClaws() {
 		return claws;
 	}
 
-	public Boolean setClaws(String claws) {
+	public Boolean setClaws(Boolean claws) {
 		this.claws = claws;
 		return true;
+		
 	}
 	
 	public String getFoodtype() {
@@ -46,10 +52,18 @@ public class Cat extends Pet{
 		this.foodtype = foodtype;
 		return true;
 	}
-	
-	public String printCat() {//give an option for these?
-		return "Shorthair, long hair, or hairless Cat? " +hair + "\nClawed or declawed? " + claws + "\nSoft or hard food? " + foodtype;
+
+	@Override
+	public String toString() {
+		return "Cat [getName()=" + getName() + ", getAge()=" + getAge() + ", getColor()=" + getColor() + ", hair="
+				+ hair + ", claws=" + getClaws() + ", foodtype=" + foodtype + "]";
 	}
+
 	
+	
+//	public String printCat() {//give an option for these?
+//		return "Shorthair, long hair, or hairless Cat? " +hair + "\nClawed or declawed? " + claws + "\nSoft or hard food? " + foodtype;
+//	}
+
 	
 }
