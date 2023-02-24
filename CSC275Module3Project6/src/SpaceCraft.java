@@ -3,16 +3,16 @@ public class SpaceCraft {
 
 	private Integer Buno;
 	private String FuelType;
-	private Integer FuelEcon = 1000;
+	private final Integer FuelEcon = 1000;
 
 
 public SpaceCraft() {
 }
 
-public SpaceCraft(Integer buno, String fuelType, Integer fuelecon) {
+public SpaceCraft(Integer buno, String fuelType) {
 	this.Buno = buno;
 	this.FuelType = fuelType;
-	this.FuelEcon = fuelecon;
+//	this.FuelEcon = fuelecon;
 }
 
 public Integer getBuno() {
@@ -38,9 +38,7 @@ public Integer getFuelEcon() {
 	return FuelEcon;
 }
 
-public void setFuelEcon(Integer fuelecon) {
-	FuelEcon = fuelecon;
-}
+
 
 @Override
 public String toString() {
