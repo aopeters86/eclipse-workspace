@@ -10,10 +10,10 @@ public class SpaceFighter extends SpaceCraft{
 public SpaceFighter() {
 	
 }
-public SpaceFighter(Integer buno, String fueltype, Integer fuelecon, String weapon, Integer payload) {
+public SpaceFighter(Integer buno, String fueltype, String weapon, Integer payload) {
 //super.setBuno(buno);
 //super.setFuelType(fueltype);
-super(buno,fueltype,fuelecon);
+super(buno,fueltype);
 this.Weapon = weapon;
 this.Payload = payload;
 
@@ -35,8 +35,8 @@ public void setPayload(Integer payload) {
 }
 //functionality
 public Integer getFighterEcon() {
-	if(Payload >= 12 && Payload < getFuelEcon()) {
-		return (getFuelEcon() - Payload);
+	if(Payload < getFuelEcon()) {
+		return getAttackRange() + (getFuelEcon() - Payload);
 	}
 	else {
 		return 0;
